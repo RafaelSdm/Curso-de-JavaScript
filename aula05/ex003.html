@@ -18,13 +18,16 @@
 <body>
     <h1>hello world!</h1>
     <h2>hello world</h2>
-    <p>testando o javascript</p>
+    <p>testando o javascript </p>
     <script>
-        // disparador de janelas
-        window.alert("bem vindo ao teste de javascript")// vai aparecer um ok na tela
-        window.confirm('como esta sendo sua experiência')//ira aparecer cancelar ou ok
-        window.prompt('qual é o seu nome?')//vai perguntar o nome
-        
+        var n1 = Number.parseInt(window.prompt("informe um numero:"))
+        var n2 = Number.parseInt(window.prompt("informe outro numero:"))
+        var soma = n1 + n2
+        window.alert("o resultado de "+ n1 + "+ " + n2 + " é de " + soma)
+        window.alert("o resultado do valor em string é "+String(soma))
+        window.alert(`o resultado da soma de ${n1} + ${n2} é de ${soma}`)
+     
+
     </script>
     
 </body>

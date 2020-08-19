@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contagem de letras</title>
+    <style>
+        body{
+            font: normal 30pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("informe o seu nome:")
+        document.write(`ola ${nome}!, seu nome possui ${nome.length} caracteres<br/>`)
+        document.write(`ola <strong>${nome}</strong>! seu nome em letra maiscula fica: ${nome.toUpperCase()}!<br/> `)
+        document.write(`seu nome totalmente em letras minusculas fica ${nome.toLocaleLowerCase()}`)
+    </script>
+</body>
+</html>
