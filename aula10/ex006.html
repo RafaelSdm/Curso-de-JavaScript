@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>eventos DOM ptII</title>
+    <style>
+        div#area{
+            font: normal 20pt Aria;
+            background:chartreuse;
+            color: black;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">intereja...</div>
+    <script>
+        var a = window.document.getElementById("area")
+        a.addEventListener('click',clicar)
+        a.addEventListener('mouseover',entrar)
+        a.addEventListener('mouseout',sair)
+
+        function clicar(){
+            a.innerText = "clicou"
+            a.style.background = "blue"
+            a.style.color = "white"
+
+        }
+        function entrar(){
+            a.innerText = "entrou!"
+            a.style.color = "purple"
+            a.style.background = "red"
+
+        }
+        function sair(){
+            a.innerText = "saiuu"
+            a.style.background = "yellow"
+            a.style.color = "green"
+        }
+        
+
+    </script>
+    
+</body>
+</html>
