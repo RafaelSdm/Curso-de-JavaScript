@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie = edge">
+    <title>primeiros passos com o DOM</title>
+    <style>
+        body{
+            background-color: rgb(126, 250, 229);
+            color: rgb(28, 61, 211);
+            font: normal 10pt Arial;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>iniciando os  estudos com o DOM</h1>
+    <p>segue abaixo o resultado fornecido</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em javascript</p>
+    <div id="msg">clique em min</div>
+    <div name= "msgm">colocando a frase incial</div>
+    <div class="txt">colando a frase por meio de classes</div>
+    <div id="mensagem">usanso o selector</div>
+    <div class="texto">usando a frase de selector</div>
+    <script>
+        window.document.write("hello world <br/>")
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var corpo = window.document.body
+        var p2 = window.document.getElementsByTagName("p")[1]
+        p1.style.color = "yellow"
+        corpo.style.background = "black"
+        document.write(p2.innerHTML)
+        window.document.write(`<br/>esta escrito assim: ${p1.innerText}`)
+        var d = window.document.getElementById("msg")
+        d.style.background = "pink"
+        d.innerText = "estou mundando a frase na ide"
+        var c = window.document.getElementsByName("msgm")[0]
+        c.innerText = "olaa garaii"
+        //window.alert(p2.innerText)
+        var d = window.document.getElementsByClassName("txt")[0]
+        d.innerText = "mundando as frases de classes"
+        var f = window.document.querySelector("div#mensagem")
+        f.style.color = "red"
+        f.style.background = "green"
+        var h = window.document.querySelector("div.texto")
+        h.style.color = "pink"
+        h.style.background = "blue"
+
+    </script>
+</body>
+</html>
