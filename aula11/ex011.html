@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Paises</title>
+</head>
+<body>
+    <h1>Identificando a naturalidade:</h1>
+    <input type="text" name="pais" id="pais">
+    <input type="button" value="verificar" onclick="verificação()".>
+    
+    <div id="res">
+        <p>analisando sua nacionalidade...</p>
+        
+    </div>
+    <script>
+       function verificação(){
+           var txt = window.document.getElementById('pais')
+           var resp = window.document.getElementById('res')
+           var p = (txt.value)
+           var n = p.toUpperCase()
+           resp.innerHTML = `<p> voce mora em <strong>${p}</strong>!`
+            if (n == 'BRASIL'){
+                resp.innerHTML += `voce é um brasilerio nato!`
+            }else{
+                resp.innerHTML += `voce é um estrangeiro!`
+            }
+            resp.innerHTML += `seja bem vindo ao brasil!`
+            
+            
+       }
+    </script>
+    
+</body>
+</html>
