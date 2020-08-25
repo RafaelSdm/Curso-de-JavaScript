@@ -1,5 +1,5 @@
 body{
-    background-color: darkviolet;
+    background-color: rgb(32, 28, 34);
     font: normal 15pt "Calibre";
 
 }
@@ -17,10 +17,6 @@ section{
     margin: auto;
     box-shadow: 0px 5px 10px yellow;
     
-}
-div{
-    text-align: center;
-    padding: 10px;
 }
 
 footer{

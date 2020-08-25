@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible"content="ie-edge">
-    <title>hora do dia</title>
+    <title>Modelo de tabuada</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>hora do dia</h1>
+        <h1>tabuada</h1>
     </header>
     <section>
-        <div id="msg">
-            aqui ira aparecer a imagem
+        <div>
+            <p>
+                Numero: <input type="number" name="num" id="txtn">
+                <input type="button" value="Gerar tabuada" onclick="tabuada()">
+            </p>
 
         </div>
-        <div id="foto">
-            <img id="imagem" src="manha.png" alt="foto alternativa">
+        <div>
+            <select name="tabuada" id="seltab" size="11">
+                <option>informe um numero acima</option>
+
+            </select>
             
 
         </div>
