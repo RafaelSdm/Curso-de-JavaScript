@@ -1,0 +1,31 @@
+body{
+    background-color: darkviolet;
+    font: normal 15pt "Calibre";
+
+}
+header{
+    color: floralwhite;
+    text-align: center;
+
+}
+
+section{
+    background-color: floralwhite;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 0px 5px 10px yellow;
+    
+}
+
+footer{
+    color: floralwhite;
+    text-align: center;
+    font-style: italic;
+
+}
+
+select#flista{
+    width: 150px;
+}
