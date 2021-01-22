@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+
+    <style>
+
+        body{
+            font: normal 20pt arial;
+        }
+
+        input#n1{
+            width: 60px;
+            background-color: rgba(27, 27, 153, 0.301);
+        }
+
+        input#n2{
+            width: 60px;
+            background-color: rgba(0, 0, 255, 0.356);
+        }
+
+        div#resultado{
+            margin-top: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+        <h1>Somando os valores</h1>
+
+        <input type="number" name="number1" id="n1">
+        +
+        <input type="number" name="number2" id="n2">
+        <input type="button" value="Somar" onclick="somando()">
+
+        <div id="resultado">
+
+            Resultado
+
+        </div>
+
+
+
+        <script>
+        
+            function somando(){
+                var texto1 = window.document.getElementById('n1');
+                var texto2 = window.document.getElementById('n2');
+
+                var n1 = Number(texto1.value)
+                var n2 = Number(texto2.value)
+
+                var soma = n1 + n2;
+
+                var resp = window.document.getElementById('resultado')
+                resp.innerText = `a soma de ${n1} + ${n2} = ${soma}`
+            }
+
+
+        </script>
+    
+</body>
+</html>

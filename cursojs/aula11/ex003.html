@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+
+    <h1>Sistema de identificação de nacionalidade</h1>
+    Informe o seu pais:
+    <input type="text" name="pais" id="paiss">
+    <input type="button" value="Verificar" onclick="autenticacao()">
+
+    <div id="txte">
+      
+    </div>
+
+    <script>
+        // var texto = window.document.getElementById('paiss').value
+         var rep = window.document.getElementById('txte')
+         
+         function autenticacao(){
+            var texto = window.document.getElementById('paiss').value
+             //rep.innerHTML += `${texto}`
+             if((texto=='brasil')||(texto=='BRASIL')||(texto=='brasil')){
+                 rep.innerHTML =`<p>Voce é um brasileiro foda pra caraio</p>`
+             }else{
+                 rep.innerHTML =`<p>Voce é apenas um estrangeiro</p>`
+             }
+         }
+       
+       // rep.innerText = texto
+
+
+    </script>
+    
+</body>
+</html>

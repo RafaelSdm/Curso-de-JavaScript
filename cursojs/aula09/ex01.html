@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+
+    <style>
+        body{
+            background-color: rgb(75, 195, 231);
+            color: white;
+            font: normal 15pt arial;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1 id="tittle">Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="mensagem">Clique em mim</div>
+    <div name="titulo">Criado Por Rafael Damasceno</div>
+
+    <p>aprendendo a usar o <strong>DOM</strong> em javascript</p>
+
+    <script>
+        var corpo = window.document.body;
+        var p1 = window.document.getElementsByTagName('p')[0]
+        corpo.style.background = 'red'
+
+        p1.style.color = 'green'
+
+        var d = window.document.getElementById('mensagem')
+        d.style.color = 'black'
+        d.innerText = 'Estou aguando o clique'; 
+
+
+        var tit = window.document.getElementsByName('titulo')[0];
+        tit.innerText = "vai todo mundo s "
+
+
+        var t = window.document.querySelector('h1#tittle')
+        t.innerHTML = 'Estou mudando o titulo dessa bagaça'
+
+
+        window.document.write("O que esta escrito no primeiro paragrafo o HTML é: "+p1.innerHTML)
+
+
+
+
+    </script>
+</body>
+</html> 

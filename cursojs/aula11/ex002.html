@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas do DETRAN</title>
+    <style>
+        
+        h1{
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Sistemas de multas do Detran</h1>
+    Velocidade do carro:
+    <input type="number" name="vel" id="velocidade">
+    <input type="button" value="Verificar" onclick="veirificacao()">
+    <div id="resultado">
+
+
+    </div>
+
+
+
+    <script>
+
+        var textr = window.document.getElementById('resultado')
+
+        function veirificacao(){
+            var textr = window.document.getElementById('resultado')
+
+            var textov = window.document.getElementById('velocidade')
+            var vel = Number(textov.value)
+
+            textr.innerHTML = `Sua velocidade é de aproximadamene de <strong>${vel}km/h</strong>`
+           // textr.innerHTML = textr.innerHTML + "<p>Dirija sempre com cuidado</p"
+
+            if(vel >= 70){
+                textr.innerHTML = textr.innerHTML + `<p>Voce irá receber uma Multa por estar acima do permitido de velocidade </p>`
+            }
+
+            textr.innerHTML += `<p>Dirija sempre com cuidado!.</p>`
+
+
+        }
+        
+
+    </script>
+    
+</body>
+</html>

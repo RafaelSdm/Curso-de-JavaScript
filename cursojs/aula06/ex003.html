@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+
+        body{
+            background-color: rgba(0, 238, 255, 0.568);
+            color: rgba(252, 0, 0, 0.747);
+            font: normal 25pt;
+        }
+
+        h1{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Hello world</h1> <!--Isso é como se faz um comentario no HTML-->
+    <p>a maldiçaõ está sendo quebrada</p>
+
+    
+
+    <script >
+
+     var n1 = Number.parseInt(window.prompt("Informe um numero"))// Number.passerInt serve para converter no caso uma string em um numero
+     var n2 = Number(window.prompt("informe outro numero:")) // usando aenas o Number é uma mudança recente, pode usar os dois jeitos que esta certo
+
+     var soma = n1 +n2;
+
+     window.alert("a soma de " + n1 + " + " +n2+" é = "+ soma)
+     window.alert("o resultado em sring é " + String(soma))//usando o string voce converte o numero em string novamente 
+     window.alert(`a soma de ${n1} + ${n2} = ${soma}`)// forma mais simples de concatenar as vaariaveis no script   
+
+
+    </script>
+    
+</body>
+</html>

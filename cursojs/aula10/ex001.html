@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#area{
+            font: normal 15pt  arial    ;
+            background-color: blueviolet;   
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center  ;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="area" onclick="clicand1()" onmouseover="entra1()" onmouseout="sair1()">
+            Interaja.....
+            <!--em vez de usar os eventos na div, pode acionar nojs o addEventList que faz essa juncao -->
+
+    </div>
+
+
+    <script>
+
+        addEventListener('click',clicando)
+        addEventListener('mouseover',entrar)
+        addEventListener('mouseout',sair)
+
+        function clicando(){
+
+            var area = window.document.getElementById('area')
+            area.innerHTML = 'Interaji lek'
+           // area.style.background =  'red';
+
+        }
+
+        function entrar(){
+            var ent = window.document.getElementById('area')
+            ent.style.background = 'yellow'
+            ent.style.color = 'black'
+            ent.innerText = 'Passei lek'
+            
+        }
+
+        function sair(){
+            var out = window.document.getElementById('area')
+            out.style.background = 'blueviolet'
+            out.style.color = 'white'
+            out.innerText = "Sai lek"
+
+        }
+
+    </script>
+    
+</body>
+</html>
