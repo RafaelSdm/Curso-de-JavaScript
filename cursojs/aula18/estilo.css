@@ -1,0 +1,47 @@
+footer{
+    text-align: center;
+    font-style: italic;
+    
+    
+}
+
+body{
+    background-color: rgb(24, 178, 224);
+    font: normal 15pt arial;
+}
+
+section{
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.61);
+}
+
+header{
+
+    color: bisque;
+    text-align: center;
+}
+
+input#txtnumero{
+    width: 50px;
+    background-color: rgb(233, 238, 168);
+    color: rgb(170, 27, 151);
+    
+    
+}
+
+input#send{
+    background-color: rgb(88, 57, 45);
+    color: rgb(84, 173, 173);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+select#tab{
+    width: 200px;
+    
+    
+   
+}

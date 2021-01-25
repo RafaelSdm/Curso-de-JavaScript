@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercicio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+
+    <section>
+        <div>
+            <p id="box">Informe um numero:
+                <input type="number" name="numero" id="txtnumero">
+            </p>
+
+            <input type="radio" name="choice" id="mult" checked>
+            <label for="vez">Multiplicação</label>  
+            <input type="radio" name="choice" id="divi">
+            <label for="div">Divisao</label>  
+            
+            <input id="send" type="button" value="Gerar Tabuada" onclick="verificar()">
+
+        </div>
+
+        <div id="res">
+
+            <select name="tab" id="tab" size="10"></select>
+            
+
+        </div>
+    </section>
+    <footer>
+        <h3>&copy;Rafael Damasceno</h3>
+        <p>Ciencia da computação - UNIPAC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
