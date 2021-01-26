@@ -1,0 +1,42 @@
+footer{
+    text-align: center;
+    font-style: italic;
+}
+
+body{
+    background-color: rgb(24, 178, 224);
+    font: normal 15pt arial;
+}
+
+section{
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.61);
+}
+
+header{
+
+    color: bisque;
+    text-align: center;
+}
+
+select#txtdados1{
+    margin-left: 10px;
+    background-color: crimson;
+    color: chartreuse;
+}
+
+select#txtdados{
+    background-color: rgb(255, 190, 104);
+    color: blue;
+}
+
+input#botao{
+    margin-left: 50px;
+    border-radius: 50px;
+    
+
+}
